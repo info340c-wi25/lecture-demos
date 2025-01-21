@@ -10,7 +10,6 @@ h2 {
 }
 
 
-/* nav bar */
 nav {
     color: white;
     background-color: #4b2e83;
@@ -29,11 +28,34 @@ nav li {
     padding: 10px;
 }
 
-/* about section */
-.about {
-    background-color: #f8f8f8;
+/* Example 4 if you want to use flexbox for the nav bar */
+/* if we want to use flexbox instead to style menu */
 
-}
+/* nav ul {
+    display: flex;
+    justify-content: space-around;
+} */
+
+/* End of example 4 */
+
+
+/* Example 3 - turn the whole thing into side by side columns! */ 
+
+/* main {
+    display: flex;
+    align-items: center;
+}  */
+
+/* about section */
+/* .about {
+    background-color: #f8f8f8;
+    flex-basis: 40%;
+    order: 2;
+    margin-left: 2em;
+
+} */
+
+/* End of example 3 */
 
 
 /* course cards */
@@ -46,7 +68,50 @@ nav li {
     max-width: 150px;
 }
 
+
+/* Example 1 my flexbox pool */
+
+/* Also show justify-content: center */
+
+.card-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+
+}
+
+/* End of Example 1 */
+
+/* Example 2 properties the cards in the flexbox use */
+
+/* .jobs .card {
+    flex-grow: 1;
+    flex-basis: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+/* End of Example 2 */
+
+/* Example 1a - show how you can have certain elements in a flexbox pool grow more than others */
+/* Also show flexgrow of 0 and 1 */
+
+/* .jobs .card.microsoft {
+    flex-grow: 5;
+} */
+
+/* End of example  */
+
+/* Example 1b  - last one doesn't grow to fill if we want*/
+
+/* .jobs .card:last-child {
+    flex-grow: 0;
+    
+} */
+
+/* End of example 1b */
+
+
 footer {
     font-size: smaller;
 }
-
