@@ -1,8 +1,10 @@
+
 /* general styling */
-h1,
-h2,
-h3 {
-    font-family: 'Helvetica';
+h1, h2, h3, p {
+    /* font-size: 1.5em;     */
+    /* font-size: 150%;   */
+    /* font-family: 'Helvetica'; */
+    /* font-family: "Open Sans", serif; */
 
     /* Example 1 */
     /* font that doesn't exist */
@@ -11,7 +13,7 @@ h3 {
     /*font that doesn't exist, but fall back on a sans-serif font (maybe helvetic)*/
     /* font-family: 'Fakevetica', sans-serif; */
     /* After i've added the google font from the internet (and added the link in my html file) */
-    /* font-family: 'Fakevetica', 'Open Sans', sans-serif;  */
+    font-family: 'Fakevetica', 'Open Sans', sans-serif; 
 
     }
 
@@ -49,9 +51,9 @@ nav li {
     height: 50px; */
     
     /* Example 3 */
-    /* display: inline-block;
+    display: inline-block;
     width: 200px;
-    height: 50px; */
+    height: 50px;
     
 
     /* Example 3a */
@@ -63,9 +65,9 @@ nav li {
     /* Example 3b - make it look nicer */
     /* adding border; */
 
- /* border: 5px double white;
-    margin: 10px;
-    padding: 10px;  */
+    border: 5px dashed white;
+    margin: 15px;
+    padding: 15px; 
 }
 
 /* about section */
@@ -120,5 +122,5 @@ footer {
 }
 
 span {
-    font-size: 1.6rem;
+    font-size: 1.6em;
 } */
