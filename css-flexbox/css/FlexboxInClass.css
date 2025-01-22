@@ -1,3 +1,9 @@
+
+
+/* * {
+    box-sizing: border-box;
+} */
+
 /* general styling */
 h1,
 h2,
@@ -28,7 +34,7 @@ nav li {
     padding: 10px;
 }
 
-/* Example 4 if you want to use flexbox for the nav bar */
+/* Example 5 if you want to use flexbox for the nav bar */
 /* if we want to use flexbox instead to style menu */
 
 /* nav ul {
@@ -55,6 +61,7 @@ nav li {
 
 } */
 
+
 /* End of example 3 */
 
 
@@ -75,7 +82,7 @@ nav li {
 
 .card-container {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 
 }
 
@@ -92,6 +99,8 @@ nav li {
 } */
 
 /* End of Example 2 */
+
+
 
 /* Example 1a - show how you can have certain elements in a flexbox pool grow more than others */
 /* Also show flexgrow of 0 and 1 */
@@ -110,6 +119,13 @@ nav li {
 } */
 
 /* End of example 1b */
+
+/* Example 1c - show how box-sizing:borderbox fixes when padding and margin interfere with size */
+/* don't forget to remove the margin above on the .job .card */
+
+/* .card {
+    flex-basis:  50%;
+} */
 
 
 footer {
