@@ -157,6 +157,15 @@ footer {
 @media (min-width: 992px) { 
     .jobs .card {
         flex-basis: 33%;
+        background-color: lightblue;
+    
+    }
+}
+
+@media (min-width: 1200px) { 
+    .jobs .card {
+        flex-basis: 25%;
+        background-color: lightgreen;
     
     }
 }
