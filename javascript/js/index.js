@@ -61,9 +61,9 @@
 // letters[3] = "car";
 // console.log(letters);
 
-// // const myArray = ["tim", "tom", "ted"];
-// // console.log(myArray);
-// // console.log(myArray[2])
+// const myArray = ["tim", "tom", "ted"];
+// console.log(myArray);
+// console.log(myArray[2])
 
 // // Slide 20 - Nested Arrays
 // // an array of different dinners available at a fancy party
@@ -76,7 +76,7 @@
 //     ['portobello steak', 'rice', 'green beans']
 // ];
 
-// // // console.log(dinnerOptions.length); //4
+// console.log(dinnerOptions.length); //4
 // console.log(dinnerOptions[2][0])
 
 // const fishOption = dinnerOptions[2]; // ['fish', 'rice', 'green beans']
@@ -175,7 +175,7 @@
 
 
 
-// //slide 24 - practice problem
+//slide 24 - practice problem
 
 // const dailySleep = { day : 'Monday', hours : 9};
 
@@ -266,8 +266,8 @@
 //   const firstNumber = person.favorites.numbers[0]; //12
 //   person.favorites.numbers.push(7); //push 7 onto the Array
 
-// // Slide 28
-// // Arbitrary list of people's names, heights, and weights
+// // // Slide 28
+// // // Arbitrary list of people's names, heights, and weights
 // const peopleTable = [
 //     {name: 'Ada', height: 64, weight: 135},
 //     {name: 'Bob', height: 74, weight: 156},
@@ -282,11 +282,7 @@
 //     console.log(element.name, element.height, element.weight);
 // });
 
-// // // Slide 30
-// const myArray1 = [a, b, c];
-
-// myArray.push(k)
-// myArray1 = [e,f,g];
+// // Slide 30
 
 // const myArray = [1, 2, 3, 4];
 // // example with normal for loop with array
