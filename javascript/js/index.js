@@ -18,7 +18,7 @@
 // let hoursSlept; 
 // console.log(hoursSlept); //=> undefined
 
-//  let hoursSlept = ['a', 'b', 'c'];
+//  hoursSlept = ['a', 'b', 'c'];
 //  console.log(hoursSlept);
 //  console.log(typeof(hoursSlept));
 
@@ -38,7 +38,7 @@
 // myArray = [a,b,c];
 
 
-// // Slide 18 Variable types
+// // // Slide 18 Variable types
 // //Numbers (no difference between int and float)
 // const x = 4;   //'number'
 // const y = 1.5; //'number'
@@ -49,7 +49,7 @@
 // //Booleans
 // const likesCode = true;
 
-// //Arrays
+// // //Arrays
 // const letters = ['a', 'b', 'c']; //literal syntax
 // const things = ['raindrops', 2.5, true, [3,4,3]]; //mix types
 // console.log(letters[0]); //'a'
@@ -64,6 +64,8 @@
 // const myArray = ["tim", "tom", "ted"];
 // console.log(myArray);
 // console.log(myArray[2])
+// myArray.push("tina");
+// console.log(myArray);
 
 // // Slide 20 - Nested Arrays
 // // an array of different dinners available at a fancy party
@@ -78,13 +80,14 @@
 
 // console.log(dinnerOptions.length); //4
 // console.log(dinnerOptions[2][0])
+// console.log(dinnerOptions[2].length); //4
 
-// const fishOption = dinnerOptions[2]; // ['fish', 'rice', 'green beans']
+// // const fishOption = dinnerOptions[2]; // ['fish', 'rice', 'green beans']
 
-// console.log(fishOption.length); //3
+// // console.log(fishOption.length); //3
 
-// // fishOption is an array, so can reference its elements by index
-// console.log(fishOption[0]); //"fish"
+// // // fishOption is an array, so can reference its elements by index
+// // console.log(fishOption[0]); //"fish"
 
 // // Access the 2th element's 0th element
 // console.log(dinnerOptions[1][2]); //"steak"
@@ -118,9 +121,11 @@
 // const var4 = "four";
 
 // console.log(var1, var2, var3, var4);
-// console.log(var1 + " " + var2 + var3 + var4);
+// // console.log(var1 + " " + var2 + var3 + var4);
 
-// // Slide 22
+// console.log("the value of var1 in index.js is: ", var1)
+
+// // // Slide 22
 // const ages = {'sarah':42, amit:35, zhang:13};
 
 // const myVar = 'sarah';
@@ -131,7 +136,7 @@
 // console.log(ages.zhang);
 // console.log(ages['zhang'])
 
-// //can omit quotes on keys, but they are actually strings!
+//can omit quotes on keys, but they are actually strings!
 // const englishToSpanish = {one:'uno', two:'dos'}
 
 
@@ -143,13 +148,13 @@
 // console.log("myKeys:", mykeys); //see they are all strings even if you make them numerals. the keys are always strings in jscript
 
 // //mixed values
-// const typeExamples = {'int':12, 'str':'dog', 'list':[1,2]}
+// const typeExamples = {'int':12, 'str':'dog', 'list':[1,2], 'objExample':{a:1, b:2}};
 // const empty = {}
 
 // console.log(typeExamples);
 
 
-// // // Slide 23 Accessing Properties
+// // // // Slide 23 Accessing Properties
 
 // const ages = {alice:40, bob:35, charles:13};
 
@@ -166,6 +171,7 @@
 // //assign values
 // ages['alice'] = 41;
 // console.log( ages['alice'] ); //=> 41
+// console.log(ages);
 
 // ages['fred'] = 19; //adds the key and assigns value
 // ages['joe'] = 15; //adds the key and assigns value
@@ -230,7 +236,7 @@
 // //   const favFood = person['favorites'][inputtedValue]; //object in the object
 // //                   //object           //value
   
-//   const firstNumber = person['favorites']['numbers'][0]; //12
+//   const firstNumber = person['favorites']['numbers'][1]; //12
 
 //   console.log(firstNumber);
 //   person['favorites']['numbers'].push("56"); //push 'hey' onto the Array
@@ -284,7 +290,7 @@
 
 // // Slide 30
 
-// const myArray = [1, 2, 3, 4];
+const myArray = [1, 2, 3, 4];
 // // example with normal for loop with array
 // for (let i=0;i<myArray.length; i++){
 //     console.log(myArray[i]);
@@ -296,17 +302,17 @@
 // }
 
 // // example with object 1
-// const myObject = {a: 1, b: 2, c: 3};
+const myObject = {a: 1, b: 2, c: 3};
 
 // for(const theKey in myObject) { //loop object keys
 //   console.log(theKey, ":", myObject[theKey])
 // }
 
-// // example with object 2
-// //explicit key looping - prefered this
-// const keys = Object.keys(myObject);
-// for(const theKey of keys) 
-// { console.log(theKey, ":", myObject[theKey])};
+// example with object 2
+//explicit key looping - prefered this
+const keys = Object.keys(myObject);
+for(const theKey of keys) 
+{ console.log(theKey, ":", myObject[theKey])};
 
 // // Slide 32
 
