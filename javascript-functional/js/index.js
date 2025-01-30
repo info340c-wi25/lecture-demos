@@ -287,6 +287,27 @@ const newArray = oldArray.map(function(item){
 
 // console.log(squares); // [1, 4, 9, 16, 25]
 
+
+// // another  example with peopleArray:
+
+// const alteredPeopleArray = peopleArray.map(function (personObj) {
+//   const personName = "hi " + personObj.name
+//   return personName;
+
+// });
+
+// console.log(alteredPeopleArray);
+
+// // // and another example showing how we might start to transform things into hmtl elements
+
+// const liPeopleArray = peopleArray.map(function (personObj) {
+//   const liElement = "<li>" + personObj.name + "</li>"
+//   return liElement;
+
+// });
+
+// console.log(liPeopleArray);
+
 // // // Slide 20 - Practice
 
 // const peopleNames = ['Mickey', 'Daffy', 'Elmer'];
@@ -305,7 +326,7 @@ const newArray = oldArray.map(function(item){
 
 // console.log(peopleGreetings);
 
-// // Slide 21 - Filtering
+// Slide 21 - Filtering
 
 // const array = [3,1,4,2,5];
 // console.log(array);
@@ -323,6 +344,23 @@ const newArray = oldArray.map(function(item){
 
 // })
 // console.log(tallPeopleArray);
+
+// // // Syntactic example of cascading filter and sort
+
+// const tallPeopleArray = peopleArray.filter(function (personObj) {
+//   return personObj.height > 65;
+// }).sort(function (personA, personB)  {
+//   if(personA < personB) {
+//     return -1; //person A's name comes earlier in the alphabet
+//   } else if(personA > personB) {
+//     return 1; //person B's name comes earlier in the alphabet
+//   } else {
+//     return 0; //names are the same
+//   }
+// });
+
+// // prints the people over 65 inches tall, sorted by name
+// console.log(tallPeopleArray)
 
 
 
