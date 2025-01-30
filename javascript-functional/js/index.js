@@ -276,7 +276,10 @@ const newArray = oldArray.map(function(item){
 });
 */
 
-// //map the numbers using anonymous callback function
+// // map the numbers using the named callback function
+// const squares = numbers.map(square);
+
+// // or more commonly, map the numbers using anonymous callback function
 // const squares = numbers.map(function(n) {
 //     return n*n;
 // })
