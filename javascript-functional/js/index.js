@@ -44,7 +44,7 @@ const peopleArray = [
 
 
 
-// // Slide 10
+// // Slide 11 Functions  literals
 // const array = [1,2,3]; //named variable (not anonymous)
 // console.log(array); //pass in named var
 
@@ -69,7 +69,7 @@ const peopleArray = [
 // sayHello("Todd");
 
 
-// //Slide 11
+// //Slide 12
 // const obj = {}
 
 // function sayHello(name) { 
@@ -102,7 +102,7 @@ const peopleArray = [
 // //run it
 // obj.otherFunc();
 
-// // // slide 12
+// // // slide 13
 
 // function sayHello(name) { 
 //   console.log("Hello, "+name);
@@ -128,7 +128,7 @@ const peopleArray = [
 
 /* note where parens and braces close! */
 
-// // slide 13 passing versus calling
+// // slide 14 passing versus calling
 // function sayHello() { //version with no args
 //   return "Hello";
 // }
@@ -141,7 +141,7 @@ const peopleArray = [
 // console.log( sayHello() ); // logs "Hello", which is 
 //                           // what `sayHello()` resolves to.
 
-// // Slide 14 Calback Functions
+// // Slide 15 Calback Functions
 // //takes in TWO callback functions!
 // function doTogether(firstCallback, secondCallback){
 //   firstCallback();  //execute the first function
@@ -165,7 +165,7 @@ const peopleArray = [
 // doTogether(rubBelly, patHead());
 
 
-// // Slide 15
+// // Slide 16
 
 // //Arbitrary list of people's names, heights, and weights
 // let peopleArray = [ {name: 'Ada', height: 64, weight: 200},
@@ -215,7 +215,7 @@ const peopleArray = [
 
 // // //peopleArray.forEach((person) => console.log(person))
 
-// // Slide 16 - Array Iteration
+// // Slide 17 - Array Iteration
 
 // //Iterate through an array
 // const array = ['a','b','c'];
@@ -230,7 +230,7 @@ const peopleArray = [
 //    console.log(item);
 // });
 
-// //Slide 17 forEach() callbacks
+// //Slide 18 forEach() callbacks
 
 // //Iterate through an array
 // const myArray = ['a','b','c'];
@@ -251,7 +251,7 @@ const peopleArray = [
 //   console.log(theArray);
 // });
 
-// //Slide 18 Mapping
+// //Slide 19 Mapping
 
 // // function square(n) { //a function that squares a number
 // //   return n*n;
@@ -276,7 +276,7 @@ const peopleArray = [
 
 // console.log(squares); // [1, 4, 9, 16, 25]
 
-// // // Slide 19 - Practice
+// // // Slide 20 - Practice
 
 // const peopleNames = ['Mickey', 'Daffy', 'Elmer'];
 
@@ -294,7 +294,7 @@ const peopleArray = [
 
 // console.log(peopleGreetings);
 
-// // Slide 20 - Filtering
+// // Slide 21 - Filtering
 
 // const array = [3,1,4,2,5];
 // console.log(array);
@@ -315,7 +315,7 @@ const peopleArray = [
 
 
 
-// Slide 21 - Reducing
+// Slide 22 - Reducing
 
 // const letters = ['a','b','c','d','e'];  //an initial array
 // function link(accumulation, newItem) { //combines two strings
@@ -329,7 +329,7 @@ const peopleArray = [
 // }
 // console.log(linked); //"->a->b->c->d->e"
 
-// // Slide 22 - Reducing
+// // Slide 23 - Reducing
 // const letters = ['a','b','c','d','e'];  //an initial array
 // function link(accumulation, newItem) { //combines two strings
 //   const newAccumulation = accumulation + "->" + newItem;
@@ -349,7 +349,7 @@ const peopleArray = [
 
 // console.log(totalHeightOfPeople);
 
-// // Slide 23 - Practice 
+// // Slide 24 - Practice 
 // const phoneDigits = [6,5,2,6,9.5,2];
 
 // function largest(currentLargest, newNumber) {
