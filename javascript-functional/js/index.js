@@ -268,6 +268,14 @@ const peopleArray = [
 // // }
 // // console.log(squares); // [1, 4, 9, 16, 25]
 
+//TEMPLATE
+/*
+const newArray = oldArray.map(function(item){
+  const transformed = ...
+  return transformed;
+});
+*/
+
 // //map the numbers using anonymous callback function
 // const squares = numbers.map(function(n) {
 //     return n*n;
