@@ -378,7 +378,7 @@ const newArray = oldArray.map(function(item){
 // }
 // console.log(linked); //"->a->b->c->d->e"
 
-// // Slide 23 - Reducing
+// // // Slide 23 - Reducing
 // const letters = ['a','b','c','d','e'];  //an initial array
 // function link(accumulation, newItem) { //combines two strings
 //   const newAccumulation = accumulation + "->" + newItem;
