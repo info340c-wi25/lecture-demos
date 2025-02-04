@@ -116,9 +116,9 @@ const songArray = [
 // const songListElem = document.querySelector('#dataSection ol');
 // songListElem.appendChild(newLi);
 
-// // Slide 18 - Pattern of using functions to generate elements
-// // Take in a song object and return a formatted <li> object
-// // We can do this with less code in React
+// Slide 18 - Pattern of using functions to generate elements
+// Take in a song object and return a formatted <li> object
+// We can do this with less code in React
 
 // function createSongListItem(songObj) {
 //   //make this into a url
@@ -154,10 +154,6 @@ const songArray = [
 // }
 
 // renderSongList(songArray);
-
-// const songLiElem = createSongListItem({ artist: "Warren Zevon", title: "Lawyers Guns and Money", youtubeUrl: "https://www.youtube.com/watch?v=F2HH7J-Sx80" })
-// const songListElem = document.querySelector('#dataSection ol');
-// songListElem.appendChild(songLiElem);
 
 
 // // Slide 18A - Pattern of using functions to generate elements
