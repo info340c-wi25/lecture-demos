@@ -116,9 +116,9 @@ const songArray = [
 // const songListElem = document.querySelector('#dataSection ol');
 // songListElem.appendChild(newLi);
 
-// Slide 18 - Pattern of using functions to generate elements
-//Take in a song object and return a formatted <li> object
-// We can do this with less code in React
+// // Slide 18 - Pattern of using functions to generate elements
+// // Take in a song object and return a formatted <li> object
+// // We can do this with less code in React
 
 // function createSongListItem(songObj) {
 //   //make this into a url
@@ -131,6 +131,15 @@ const songArray = [
 //   newLi.append(aElem);
 //   return newLi;
 // }
+
+
+// // First show how we can use the function to create a single song list item
+// const songLiElem = createSongListItem({ artist: "Warren Zevon", title: "Lawyers Guns and Money", youtubeUrl: "https://www.youtube.com/watch?v=F2HH7J-Sx80" })
+// const songListElem = document.querySelector('#dataSection ol');
+// songListElem.appendChild(songLiElem);
+
+
+// // Now show how to iterate over the asongArray and create a list of song list items
 
 // function renderSongList(aSongArray) {
 //   const songListElem = document.querySelector('#dataSection ol');
