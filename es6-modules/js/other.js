@@ -1,30 +1,29 @@
 'use strict';
-
+// const animalArray = ["dog", "cat", "goldfish"];
 console.log("I'm the other.js file!");
-
 
 // import {animalArray} from './index.js';
 
-//Slide 18a
+// // Slide 18a
 // console.log("Animal Array: ", animalArray)
 
-// // //Slide 20
-// const otherMessage = "I'm other!";
 
-// //Slide 20a
+
+
+// //Slide 20a - named export example:
 // export const otherMessage = "I'm other!";
 
-// //Slide 20b
+// //Slide 20b - named export example:
 // export function otherFunc() {
 //     console.log("Text from 'otherFunc()' ");
 // }
 
-// //Slide 22 default example
-// export const otherMessage = "I'm other!";
+
+
+// // default export example:
 
 // export default function otherFunc() {
 //     console.log("Text from 'otherFunc()' ");
 // }
 
-
- 
+// export const otherMessage = "I'm other!";

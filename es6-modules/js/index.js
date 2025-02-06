@@ -4,43 +4,23 @@ const animalArray = ["dog", "cat", "goldfish"];
 
 console.log("I'm the index.js file!");
 
-//Slide 18a
-// console.log("animalArray: ", animalArray);
+console.log("animalArray: ", animalArray);
 
 
-// // Slide 18
-// import './other.js'
 
-// // Slide 20a
+// // named import example:
+// import {otherMessage, otherFunc} from './other.js';
+
+// console.log("otherMessage: ", otherMessage);
+
+// otherFunc();
+
+
+// // default import example:
+// import otherFunc from './other.js';
 // import {otherMessage} from './other.js';
-// console.log("otherMessage: ", otherMessage)
 
-// //Slide 20b
-// import {otherMessage, otherFunc as myFunc} from './other.js';
+// console.log("otherMessage: ", otherMessage);
 
-// // import * as theModule from './other.js'; 
-
-// //Slide 22
-// import {otherMessage} from './other.js';
-// import otherDefault from './other.js';
-
-
-// //code executing
-
-
-// //Slide 20
-// console.log("Other says: ", otherMessage);
-
-
-// // Slide 20a
-// console.log("Other says: ", otherMessage);
-// // otherFunc();
-// myFunc();
-
-// // console.log(theModule.otherMessage);
-// // theModule.otherFunc();
-
-// //Slide 22
-// console.log("Other says: ", otherMessage);
-// otherDefault();
+// otherFunc();
 
