@@ -21,14 +21,14 @@ console.log(peopleArray);
 // array.filter
 // array.foreach
 
-// // ex1
+// // ex1 - transform using map where i pass in named function callback
 // function getNameStringFromPersonObj(personObj) {
 //     return personObj.name;
 // }
 // const nameArray = peopleArray.map(getNameStringFromPersonObj);
 // console.log(nameArray);
 
-// // ex2 - inline function
+// // ex2 - transform using map where i pass in inline function callback
 // const nameArray1 = peopleArray.map(function (personObj) {
 //     return personObj.name
 // });
