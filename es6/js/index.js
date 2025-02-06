@@ -143,8 +143,9 @@ console.log(peopleArray);
 // //destructuring objects
 // const myObject = {a: "dude", b: "surf", c: "hey"};
 // const {a, b, c} = myObject; //myObject.a to a, etc.
-// console.log(a); //=> 1
-// console.log(b); //=> 2;
+// console.log(a); //=> "dude";
+// console.log(b); //=> "surf";
+// console.log(c); //=> "hey";
 
 // Slide 14
 // // 2 Examples of the reduce method using the destructuring as well
