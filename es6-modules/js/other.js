@@ -20,10 +20,10 @@ console.log("I'm the other.js file!");
 
 
 
-// // default export example:
+// default export example:
 
-// export default function otherFunc() {
-//     console.log("Text from 'otherFunc()' ");
-// }
+export default function otherFunc() {
+    console.log("Text from 'otherFunc()' ");
+}
 
-// export const otherMessage = "I'm other!";
+export const otherMessage = "I'm other!";
