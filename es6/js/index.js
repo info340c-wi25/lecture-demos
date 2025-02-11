@@ -131,23 +131,29 @@ console.log(peopleArray);
 
 // console.log(foo3());
 
+// const foo4 = (params) => 'my name is  '+params;
+
+// console.log(foo4("Slim Shady"));
+
 
 //   // Slide 13
 //   //destructuring arrays
 // const myArray = [1, 2, 3, 5];
-// const [x, y, z] = myArray; //myArray elements to `x`, `y`, `z`
+// const [y, x, z, q] = myArray; //myArray elements to `x`, `y`, `z`
 // console.log(x); //=> 1;
 // console.log(y); //=> 2;
 // console.log(z); //=> 3;
 
+
 // //destructuring objects
-// const myObject = {a: "dude", b: "surf", c: "hey"};
-// const {a, b, c} = myObject; //myObject.a to a, etc.
+// const myObject = {a: "dude", b: "surf", c: "hey", d: "yo"};
+// const {b, a, c, d} = myObject; //myObject.a to a, etc.
 // console.log(a); //=> "dude";
 // console.log(b); //=> "surf";
 // console.log(c); //=> "hey";
+// console.log(d); //=> "yo";
 
-// Slide 14
+// // Slide 14
 // // 2 Examples of the reduce method using the destructuring as well
 
 // // Example 1: Here's the way to return the avg from within the reduce method using the other extra params
@@ -188,42 +194,48 @@ console.log(peopleArray);
 // console.log(rest);   //=> [30, 40]; the rest of the values!
 // console.log(rest[1])
 
+// const dimensions1 = [...dimensions];
+// console.log(dimensions1);
+
 // //Spread with an object
 // const person = {name: 'Ada', height: 64, weight: 135}
 // console.log(person)
-// const copyOfPerson = {...person}; //clone an object!
-// console.log(copyOfPerson);
 
-// console.log(person === copyOfPerson); //false! different objects!
+// // const copyOfPerson = {...person}; //clone an object!
+// // console.log(copyOfPerson);
+
+// // console.log(person === copyOfPerson); //false! different objects!
 
 // //all off the properties are "spread" into the new object
 // const personWithHat = {hat: 'baseball', ...person}
 // console.log(person); //has name, height, weight
 // console.log(personWithHat); //has name, height, weight, hat
 
-// const tallerAda = {...person, height: 74};
+// const tallerAda = { height: 74, ...person};
 // console.log(tallerAda);
 
  
 
-// //Slide 17
-// //a function that adds up all the arguments (no matter how many!)
-// function sum(...numbers) {
-//     //all arguments are gathered in the `numbers` array
+//Slide 17
+//a function that adds up all the arguments (no matter how many!)
+function sum(...numbers) {
+    //all arguments are gathered in the `numbers` array
 
-//     //numbers is an array, so we can `reduce()` it!
-//     let total = numbers.reduce((runningTotal, num) => {
-//         return runningTotal + num; //new total
-//     }, 0); //start at 0
+    //numbers is an array, so we can `reduce()` it!
+    let total = numbers.reduce((runningTotal, num) => {
+        return runningTotal + num; //new total
+    }, 0); //start at 0
 
-//     return total;
+    return total;
 
-//     // //or as one line with a concise arrow function:
-//     // return numbers.reduce((total, n) => total+n);
-// }
+    // //or as one line with a concise arrow function:
+    // return numbers.reduce((total, n) => total+n);
+}
 
 // function sum1(...numbers) { return numbers.reduce((total, n) => total + n); }
 
-// console.log(sum(3, 4, 3)); // => 10
-// console.log(sum(10, 20, 30, 40)); // => 100
+console.log(sum(3, 4, 3)); // => 10
+console.log(sum(10, 20, 30, 40, 50)); // => 100
 // console.log(sum1(3, 4, 3)); // => 10
+
+console.log("hi", "there", "Fred"); // => 55
