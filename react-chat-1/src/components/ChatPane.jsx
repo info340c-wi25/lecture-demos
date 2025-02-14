@@ -1,16 +1,16 @@
 import React from 'react';
 
-// Example Slide 17
-export function ChatPane(props) {
-    return (
-        <div>
-            <MessageItem />
-            <MessageItem />
-            <MessageItem />
-            <MessageItem />
-        </div>
-    )
-}
+// // Example Slide 17
+// export function ChatPane(props) {
+//     return (
+//         <div>
+//             <MessageItem />
+//             <MessageItem />
+//             <MessageItem />
+//             <MessageItem />
+//         </div>
+//     )
+// }
 
 // function MessageItem(props) {
 
@@ -63,6 +63,7 @@ export function ChatPane(props) {
 //              <MessageItem messageData={CHAT_HISTORY[1]}/>
 //              <MessageItem messageData={CHAT_HISTORY[2]}/>
 //              <MessageItem messageData={CHAT_HISTORY[3]}/>
+//              <MessageItem messageData={CHAT_HISTORY[4]}/>
 //         </div>
 //     )
 // }
@@ -97,6 +98,7 @@ export function ChatPane(props) {
 
 //     const messageItemArray = CHAT_HISTORY.map((messageObj) => {
 //         const element = <MessageItem messageData={messageObj} key={messageObj.timestamp} />
+//         // const element = <MessageItem messageData={messageObj}  />
 //         return element;
 // })
 //     return (
@@ -127,7 +129,7 @@ export function ChatPane(props) {
 // import CHAT_HISTORY from '../data/chat_log.json';
 
 // export function ChatPane(props) {
-//     const currentChannel='general';
+//     const currentChannel='random';
 
 //     // const currentChannel = props.currentChannel;
 //     const filteredChannelMessage = CHAT_HISTORY.filter((msgObj) => {
@@ -164,47 +166,47 @@ export function ChatPane(props) {
 //     )
 // }
 
-// // Slide 28 Example
-// import CHAT_HISTORY from '../data/chat_log.json';
+// Slide 28 Example
+import CHAT_HISTORY from '../data/chat_log.json';
 
-// export function ChatPane(props) {
+export function ChatPane(props) {
 
-//     const currentChannel = props.currentChannel;
-//     const filteredChannelMessage = CHAT_HISTORY.filter((msgObj) => {
-//         //if current channel, then keep
-//         return (msgObj.channel === currentChannel)
-//     })
+    const currentChannel = props.currentChannel;
+    const filteredChannelMessage = CHAT_HISTORY.filter((msgObj) => {
+        //if current channel, then keep
+        return (msgObj.channel === currentChannel)
+    })
     
-//     const messageItemArray = filteredChannelMessage.map((messageObj) => {
-//         const element = <MessageItem messageData={messageObj} key={messageObj.timestamp}/>
-//         return element;
-// })
+    const messageItemArray = filteredChannelMessage.map((messageObj) => {
+        const element = <MessageItem messageData={messageObj} key={messageObj.timestamp}/>
+        return element;
+})
 
-//     return (
-//         <div className='pt-2'>
-//         {messageItemArray}  
-//         </div>     
-//     )
-// }
+    return (
+        <div className='pt-2'>
+        {messageItemArray}  
+        </div>     
+    )
+}
 
-// function MessageItem(props) {
+function MessageItem(props) {
 
-//     const { userName, userImg, text} = props.messageData
+    const { userName, userImg, text} = props.messageData
 
-//     const handleClick = (event) => {
+    const handleClick = (event) => {
 
-//         console.log("you clicked on", userName);
-//     }
+        console.log("you clicked on", userName);
+    }
 
-//     return (
-//         <div className='message d-flex mb-2'>
-//             <div className='me-2'>
-//                 <img src={userImg} alt={userName+ " avatar"} onClick={handleClick} />
-//             </div>
-//             <div className='flex-grow-1'>
-//                 <p className='user-name'>{userName}</p>
-//                 <p>{text}</p>
-//             </div>
-//         </div>
-//     )
-// }
+    return (
+        <div className='message d-flex mb-2'>
+            <div className='me-2'>
+                <img src={userImg} alt={userName+ " avatar"} onClick={handleClick} />
+            </div>
+            <div className='flex-grow-1'>
+                <p className='user-name'>{userName}</p>
+                <p>{text}</p>
+            </div>
+        </div>
+    )
+}
