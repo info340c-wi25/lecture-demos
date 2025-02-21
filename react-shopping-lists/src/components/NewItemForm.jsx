@@ -93,22 +93,7 @@
 import { useState } from 'react';
 
 export function NewItemForm(props) {
-
-    const stores = [
-        { timestamp: 1, name: 'Amazon' },
-        { timestamp: 2, name: 'Walmart' },
-        { timestamp: 3, name: 'Target' },
-        { timestamp: 4, name: 'QFC' },
-      ];
-
-
-    function addStore (store) {
-        const timestamp = Date.now();
-        store = {timestamp, name: store};
-        setStoreList([...storeList, store]);
-      }
-    
-    // const stores = props.stores;
+    const stores = props.stores;
 
     const [selectedStore, setSelectedStore] = useState('QFC'); // Default store
     const [item, setItem] = useState(''); // Default item
@@ -139,7 +124,7 @@ export function NewItemForm(props) {
             <form>
                 <div className="mb-3">
                     <label htmlFor="store">Store</label>
-                    <select id="store" onChange={(e) => onSelect(e.target.value)} value={selectedStore}>
+                    <select id="store" onChange={(e) => onSelect(e.target.value)} value={props.currentStore}>
                         <option value="">Select a store</option>
                         {dropDownStoreItems}
                     </select>

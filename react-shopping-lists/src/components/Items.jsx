@@ -22,21 +22,10 @@
 
 export function ShoppingList(props) {
 
-    const items = [{ timestamp: 1, store: 'QFC', name: 'Milk' }, { timestamp: 2, store: 'QFC', name: 'Bread' },
-        { timestamp: 3, store: 'QFC', name: 'Eggs' }, { timestamp: 4, store: 'Target', name: 'Throw Rug' },
-        { timestamp: 5, store: 'Walmart', name: 'Duct Tape' }];
-      
-        // const itemList = props.itemList;        
-        // const [itemList, setItemList] = useState(items); 
-      
-        function addItem (item) {
-          const timestamp = Date.now();
-          item = {timestamp, store: currentStore, name: item};
-          setItemList([...itemList, item]);
-        };
+    const itemList = props.itemList;
+                    
 
-
-    const elemItemArray = items.map((itemObj) => {
+    const elemItemArray = itemList.map((itemObj) => {
         return <li key={itemObj.timestamp}> {itemObj.store} - {itemObj.name}</li>
     })
 
