@@ -1,0 +1,4 @@
+li {
+  list-style-position: inside; /* Moves bullet inside the background */
+  padding: 5px 10px; /* Add padding for spacing */
+}
