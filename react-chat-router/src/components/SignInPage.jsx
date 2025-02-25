@@ -37,6 +37,8 @@ export default function SignInPage(props) {
   )
 }
 
+// // Slide 9 (once the example react bootstrap nav component has been transform
+
 // import React from 'react';
 // import Dropdown from 'react-bootstrap/Dropdown';
 
