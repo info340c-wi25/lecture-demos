@@ -48,7 +48,7 @@ function App(props) {
   );
 }
 
-// // Slide 18 Example - Add Routes/Route
+// // Slide 19 Example - Add Routes/Route
 
 // import React, { useState } from 'react';
 // import { HeaderBar } from './HeaderBar.jsx';
@@ -103,7 +103,7 @@ function App(props) {
 // }
 
 
-// // Example slide 19, use index and * catchall in the route list
+// // Example slide 20, use index and * catchall in the route list
 
 // import React, { useState } from 'react';
 // import { HeaderBar } from './HeaderBar.jsx';
@@ -157,71 +157,7 @@ function App(props) {
 //   );
 // }
 
-// // Slide 23 Example - Nesting Routes
-
-// import React, { useState } from 'react';
-// import { HeaderBar } from './HeaderBar.jsx';
-// import ChatPage from './ChatPage.jsx';
-// import SignInPage from './SignInPage.jsx';
-// import * as Static from './StaticPages.jsx';
-
-// import { Routes, Route, Outlet} from "react-router";
-
-// import INITIAL_HISTORY from '../data/chat_log.json'
-// import DEFAULT_USERS from '../data/users.json';
-
-// function App(props) {
-//   const [messageStateArray, setMessageStateArray] = useState(INITIAL_HISTORY);
-//   const [currentUser, setCurrentUser] = useState(DEFAULT_USERS[1]) //initialize;
-
-//   //STATE MANAGEMENT: how do we change?
-//   const addMessage = function (userObj, messageText, channel) {
-//     const newMessage = {
-//       "userId": userObj.userId,
-//       "userName": userObj.userName,
-//       "userImg": userObj.userImg,
-//       "text": messageText,
-//       "timestamp": Date.now(),
-//       "channel": channel
-//     }
-//     const newArray = [...messageStateArray, newMessage];
-//     setMessageStateArray(newArray); //update state & re-render
-//   }
-
-//   const changeUser = (newUserObj) => {
-//     setCurrentUser(newUserObj);
-//   }
-
-//   return (
-//     <div className="container-fluid d-flex flex-column">
-//       {/* <HeaderBar currentUser={currentUser} /> */}
-//       <Routes>
-//         <Route index element={<Static.WelcomePage />} />
-//         <Route path="app" element={<AppLayout currentUser={currentUser} messageArray= {messageStateArray} addMessageFunction={addMessage} />}>
-        
-//           <Route path="chat" element={<ChatPage currentUser={currentUser} messageArray={messageStateArray} addMessageFunction={addMessage} />} />
-//           <Route path="signin" element={<SignInPage currentUser={currentUser} changeUserFunction={changeUser} />} />
-//           <Route path="about" element={<Static.AboutPage />} />
-
-//         </Route>
-//         <Route path="*" element={<Static.ErrorPage />} />
-//       </Routes>
-//     </div>
-//   );
-// }
-
-// function AppLayout(props) {
-//   return (
-//     <>
-//       <HeaderBar currentUser={props.currentUser} />
-//       <Outlet />
-//     </>
-//   )
-// }
-
-
-// // Example slide 27 nesting Routes for Authentication (got rid of the app subcomponent from prev example)
-
+// // Example slide 25 nesting Routes for Authentication (got rid of the app subcomponent from prev example)
 
 // import React, { useState } from 'react';
 // import { HeaderBar } from './HeaderBar.jsx';

@@ -77,7 +77,7 @@ function MessageItem(props) {
 }
 
 
-// // Slide 38 Chat Pane
+// // Slide 35 Chat Pane
 // import React, {useState} from 'react';
 // import { ComposeForm } from './ComposeForm';
 // import {useParams} from 'react-router';

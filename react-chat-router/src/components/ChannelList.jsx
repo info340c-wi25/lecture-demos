@@ -36,7 +36,7 @@ export function ChannelList(props) {
   )
 }
 
-// // Slide 39, update the Links in the Channel Page to update them to have the state included for each channel
+// // Slide 36, update the Links in the Channel Page to update them to have the state included for each channel
 // import React from 'react';
 // import {Link} from 'react-router';
 

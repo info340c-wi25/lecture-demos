@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 
 export function WelcomePage(props) {
   return (
@@ -12,7 +12,7 @@ export function WelcomePage(props) {
   );
 }
 
-// // Slide 21
+// // Slide 22
 // import React from 'react';
 // import {Link} from 'react-router'
 
@@ -27,20 +27,6 @@ export function WelcomePage(props) {
 //     </div>
 //   );
 // }
-
-// //Slide 24 Example
-// export function WelcomePage(props) {
-//   return (
-//     <div className="card bg-light">
-//       <div className="container card-body">
-//         <h2>Welcome to React Messenger!</h2>
-//         <p>The latest and greatest messaging app</p>
-//         <p><a href="app/signin">Sign in to get started!</a></p>
-//       </div>
-//     </div>
-//   );
-// }
-
 
 
 export function AboutPage(props) {

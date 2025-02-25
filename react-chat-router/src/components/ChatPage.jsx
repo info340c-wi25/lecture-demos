@@ -32,7 +32,7 @@ export default function ChatPage(props) {
   )
 }
 
-// // Slide 37 URL Params
+// // Slide 34 URL Params
 // import React from 'react';
 // import _ from 'lodash';
 // import {useParams} from 'react-router';

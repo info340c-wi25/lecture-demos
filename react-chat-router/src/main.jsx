@@ -8,7 +8,7 @@ import './index.css'
 
 createRoot(document.getElementById('root')).render(
     <App />
-)
+);
 
 // // Slide 17
 
