@@ -35,7 +35,7 @@ export default function ChatPage(props) {
 // // Slide 37 URL Params
 // import React from 'react';
 // import _ from 'lodash';
-// import {useParams} from 'react-router-dom';
+// import {useParams} from 'react-router';
 
 // import { ChannelList } from './ChannelList.jsx';
 // import { ChatPane } from './ChatPane.jsx';

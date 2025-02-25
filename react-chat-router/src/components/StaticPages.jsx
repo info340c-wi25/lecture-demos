@@ -14,7 +14,7 @@ export function WelcomePage(props) {
 
 // // Slide 21
 // import React from 'react';
-// import {Link} from 'react-router-dom'
+// import {Link} from 'react-router'
 
 // export function WelcomePage(props) {
 //   return (

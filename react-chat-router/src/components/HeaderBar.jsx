@@ -34,7 +34,7 @@ export function HeaderBar(props) {
 // // Slide 21 Example changing to 'Link' with 'to' rather than 'a' with 'href'
 
 // import React from 'react';
-// import {Link } from 'react-router-dom';
+// import {Link } from 'react-router';
 
 // export function HeaderBar(props) {
 //   const currentUser = props.currentUser;
@@ -70,7 +70,7 @@ export function HeaderBar(props) {
 // // Slide 25 Example adding nested route - update links 
 
 // import React from 'react';
-// import {Link } from 'react-router-dom';
+// import {Link } from 'react-router';
 
 // export function HeaderBar(props) {
 //   const currentUser = props.currentUser;
@@ -106,7 +106,7 @@ export function HeaderBar(props) {
 //  // Slide 27 (and 29) Returning the links to not have the extra 'app' in front of the path
 
 // import React from 'react';
-// import {Link } from 'react-router-dom';
+// import {Link } from 'react-router';
 
 // export function HeaderBar(props) {
 //   const currentUser = props.currentUser;

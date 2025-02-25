@@ -39,7 +39,7 @@ function App(props) {
         addMessageFunction={addMessage}
         />
        <SignInPage currentUser={currentUser} changeUserFunction={changeUser} />
-      {/* 
+{/*       
       <Static.WelcomePage />
       <Static.AboutPage />
       <Static.ErrorPage /> */}
@@ -56,7 +56,7 @@ function App(props) {
 // import SignInPage from './SignInPage.jsx';
 // import * as Static from './StaticPages.jsx';
 
-// import { Routes, Route } from "react-router-dom";
+// import { Routes, Route } from "react-router";
 
 // import INITIAL_HISTORY from '../data/chat_log.json'
 // import DEFAULT_USERS from '../data/users.json';
@@ -111,7 +111,7 @@ function App(props) {
 // import SignInPage from './SignInPage.jsx';
 // import * as Static from './StaticPages.jsx';
 
-// import { Routes, Route } from "react-router-dom";
+// import { Routes, Route } from "react-router";
 
 // import INITIAL_HISTORY from '../data/chat_log.json'
 // import DEFAULT_USERS from '../data/users.json';
@@ -165,7 +165,7 @@ function App(props) {
 // import SignInPage from './SignInPage.jsx';
 // import * as Static from './StaticPages.jsx';
 
-// import { Routes, Route, Outlet} from "react-router-dom";
+// import { Routes, Route, Outlet} from "react-router";
 
 // import INITIAL_HISTORY from '../data/chat_log.json'
 // import DEFAULT_USERS from '../data/users.json';
@@ -229,7 +229,7 @@ function App(props) {
 // import SignInPage from './SignInPage.jsx';
 // import * as Static from './StaticPages.jsx';
 
-// import { Routes, Route, Outlet } from "react-router-dom";
+// import { Routes, Route, Outlet } from "react-router";
 
 // import INITIAL_HISTORY from '../data/chat_log.json'
 // import DEFAULT_USERS from '../data/users.json';
@@ -289,7 +289,7 @@ function App(props) {
 // import SignInPage from './SignInPage.jsx';
 // import * as Static from './StaticPages.jsx';
 
-// import { Routes, Route, Outlet } from "react-router-dom";
+// import { Routes, Route, Outlet } from "react-router";
 
 // import INITIAL_HISTORY from '../data/chat_log.json'
 // import DEFAULT_USERS from '../data/users.json';
