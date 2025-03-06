@@ -85,7 +85,7 @@ function ProtectedPage(props) {
 export default App;
 
 
-// // Slide 24
+// // Slide 22
 
 // import { getDatabase, ref, set as firebaseSet} from 'firebase/database'; 
 // import React, {useEffect, useState} from 'react';
@@ -180,7 +180,7 @@ export default App;
 
 // export default App;
 
-// // Slide 28
+// // Slide 26
 
 // import { getDatabase, ref, set as firebaseSet, onValue} from 'firebase/database';
 // import React, {useEffect, useState} from 'react';
@@ -286,7 +286,7 @@ export default App;
 
 // export default App;
 
-// // Slide 29
+// // Slide 27
 
 // import { getDatabase, ref, set as firebaseSet, onValue} from 'firebase/database';
 // import React, {useEffect, useState} from 'react';
@@ -401,7 +401,7 @@ export default App;
 
 // export default App;
 
-// // Slide 33
+// // Slide 31
 
 // import { getDatabase, ref, onValue, push as FirebasePush} from 'firebase/database'; 
 // import React, {useEffect, useState} from 'react';
