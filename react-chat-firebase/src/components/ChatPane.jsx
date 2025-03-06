@@ -11,9 +11,7 @@ export function ChatPane(props) {
   const paramsObj = useParams();
   const currentChannel = paramsObj.chanName || "general" //default
 
-  /** RENDERING: what do we look like **/
-
-  //data processes
+    //data processes
   const messagesToShow = messageArray
     .filter((messageObj) => {
       return messageObj.channel === currentChannel; //keep
