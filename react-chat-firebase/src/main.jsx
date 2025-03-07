@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import { BrowserRouter } from 'react-router-dom'
+import { initializeApp } from "firebase/app";
 
 import App from './components/App.jsx';
 
@@ -27,6 +28,25 @@ import './index.css';
 
 // // Initialize Firebase
 // initializeApp(firebaseConfig);
+
+// Import the functions you need from the SDKs you need
+
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBySBD69aYpBzGVjVjpZ_Ua1Xmu5vNmkJ0",
+  authDomain: "info340cwinter25.firebaseapp.com",
+  databaseURL: "https://info340cwinter25-default-rtdb.firebaseio.com",
+  projectId: "info340cwinter25",
+  storageBucket: "info340cwinter25.firebasestorage.app",
+  messagingSenderId: "306863158198",
+  appId: "1:306863158198:web:2855336e2b81e655748717"
+};
+
+// Initialize Firebase
+initializeApp(firebaseConfig);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
