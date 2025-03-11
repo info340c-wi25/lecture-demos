@@ -1,5 +1,5 @@
 
-//Slide End of slides (27)... if you want show how to get to the url to the image you 
+//Slide End of slides (28)... if you want show how to get to the url to the image you 
 // saved in the firebase store for the specific user 
 // you have the url in the firebase store and it points to the image you saved in the 
 // firebase db.

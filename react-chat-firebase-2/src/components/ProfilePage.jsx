@@ -37,7 +37,7 @@ export default function ProfilePage(props) {
   )
 }
 
-// //Slide 25 and 26
+// //Slide 26 and 27
 // import React, { useState } from 'react';
 
 // import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';

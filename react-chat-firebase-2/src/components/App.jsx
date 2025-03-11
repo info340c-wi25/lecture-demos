@@ -67,7 +67,7 @@ function ProtectedPage(props) {
 }
 
 
-// //Slide 20
+// //Slide 21
 // import React, { useState, useEffect } from 'react';
 // import { Routes, Route, Outlet, Navigate, useNavigate } from 'react-router-dom';
 
@@ -158,7 +158,7 @@ function ProtectedPage(props) {
 //   }
 // }
 
-// //Slide 27
+// //Slide 28
 // import React, { useState, useEffect } from 'react';
 // import { Routes, Route, Outlet, Navigate, useNavigate } from 'react-router-dom';
 

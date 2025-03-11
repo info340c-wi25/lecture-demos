@@ -50,7 +50,7 @@ export default function SignInPage(props) {
   )
 }
 
-// //Slide 17
+// //Slide 18
 
 // import React from 'react';
 // import { Navigate } from 'react-router-dom';
@@ -128,7 +128,7 @@ export default function SignInPage(props) {
 //   )
 // }
 
-// //Slide 22
+// //Slide 23
 
 // import React from 'react';
 // import { Navigate } from 'react-router-dom';

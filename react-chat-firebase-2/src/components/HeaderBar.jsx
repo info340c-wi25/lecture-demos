@@ -47,7 +47,7 @@ export function HeaderBar(props) {
   )
 }
 
-// //Slide 22 Signout example
+// //Slide 23 Signout example
 
 // import React from 'react';
 
