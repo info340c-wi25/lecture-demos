@@ -108,6 +108,31 @@ export default function ProfilePage(props) {
 //   // reader.readAsDataURL(imageFile) //initiate the reader
 //   // }
 
+//   // This is the code if you are using the storage DB with your current firebase project (not the class shared one)
+//   // const handleImageUpload = async (event) => {
+//   //   //upload the file to the storage db
+    
+//   //   console.log("Uploading", imageFile);
+//   //   const storage = getStorage(); 
+//   //   const imageRef = ref(storage, "userImages/"+currentUser.userId+".png");
+//   //   await uploadBytes(imageRef, imageFile)
+
+//   //   // get the url to this uploaded file so we can reference it from the web
+//   //   const downloadUrlString = await getDownloadURL(imageRef);
+//   //   console.log(downloadUrlString);
+
+//   //   //put in user profile
+//   //   await updateProfile(currentUser, { photoURL: downloadUrlString });
+
+//   //   //also put in real time database (for fun)
+//   //   const db = getDatabase();
+//   //   const refString = "userData/" + currentUser.userId + "/imgUrl";
+//   //   console.log(refString);
+//   //   const userImgRef = dbRef(db, "userData/" + currentUser.userId + "/imgUrl")
+//   //   await firebaseSet(userImgRef, downloadUrlString);
+
+//   // }
+
 //   return (
 //     <div className="container">
 //       <h2>
