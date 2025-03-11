@@ -69,7 +69,7 @@ export default function ProfilePage(props) {
 
 //     const storage = getStorage(getApp(), "gs://info340-storage.firebasestorage.app")
 //     // const storage = getStorage();
-//     const imageRef = ref(storage, "demo/userImages/"+currentUser.uid+".png");
+//     const imageRef = ref(storage, "demo/userImages/" + currentUser.uid + ".png");
 //     await uploadBytes(imageRef, imageFile)
 
 //     // get the url to this uploaded file so we can reference it from the web
@@ -77,49 +77,35 @@ export default function ProfilePage(props) {
 //     console.log(downloadUrlString);
 
 //     //put in user profile
-//     await updateProfile(currentUser, { photoURL: downloadUrlString} );
+//     await updateProfile(currentUser, { photoURL: downloadUrlString });
 
 //     //also put in real time database (for fun)
 //     const db = getDatabase();
-//     const refString = "userData/"+currentUser.userId+"/imgUrl";
+//     const refString = "userData/" + currentUser.userId + "/imgUrl";
 //     console.log(refString);
-//     const userImgRef = dbRef(db, "userData/"+currentUser.userId+"/imgUrl")
+//     const userImgRef = dbRef(db, "userData/" + currentUser.userId + "/imgUrl")
 //     await firebaseSet(userImgRef, downloadUrlString);
 
 //   }
 
-//   // // This is the hack if you are using real time database 
-
+//   // // This is the code if you are using the real time database
 //   // const handleImageUpload = async (event) => {
 //   //   //upload the file to the storage db
 //   //   console.log("Uploading", imageFile);
+//   // //config: create a file reader and callback for what to do when the file is read
+//   // const reader = new FileReader();
+//   // reader.onload = function (e) {
+//   //   //get the read file (read as dataURL and get its url 
+//   //   const dataUrl = e.currentTarget.result
 
 //   //   const db = getDatabase();
-//   //   const userImgURL = dbRef(db, "userData/" + currentUser.userId + "/imgUrl")
+//   //   const userImgRef = dbRef(db, "userData/" + currentUser.userId + "/imgUrl")
+//   //   //you can put this data url into the firebase db 
+//   //   firebaseSet(userImgRef, dataUrl)
+//   // }
 
-//   //   //create a new <img> element using JavaScript
-//   //   const imgElem = new Image();
-//   //   imgElem.src = imageUrl; //local ObjectURL
-
-//   //   //create an (offscreen) <canvas> element
-//   //   const canvas = document.createElement('canvas');
-//   //   canvas.width = imgElem.width;
-//   //   canvas.height = imgElem.height;
-
-//   //   //draw the image onto the canvas
-//   //   const ctx = canvas.getContext('2d');
-//   //   ctx.drawImage(imgElem, 0, 0);
-
-//   //   //convert canvas to a data string
-//   //   const imageDataString = canvas.toDataURL();
-//   //   console.log("imageDateString:", imageDataString); //this is the string you're interested in!
-//   //   console.log("userImgURL: ", userImgURL)
-
-//   //   //store that string in the database as usual
-//   //  await firebaseSet(userImgURL, imageDataString);
-//   //  await updateProfile(currentUser, { photoURL: userImgURL} );
-
-
+//   // //call this function to read the file (and trigger the above callback)
+//   // reader.readAsDataURL(imageFile) //initiate the reader
 //   // }
 
 //   return (
